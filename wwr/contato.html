@@ -86,6 +86,7 @@
                 <figure>
                     <img src="imagens/funcionario1.jpg"
                       alt="Mariana Silva, gerente de atendimento">
+
                     <figcaption>
                         Mariana Silva<br>
                         Gerente de Atendimento
@@ -95,6 +96,7 @@
                 <figure>
                     <img src="imagens/funcionario2.jpg"
                       alt="Carlos Mendes, guia de rafting">
+
                     <figcaption>
                         Carlos Mendes<br>
                         Guia de Rafting
@@ -104,6 +106,7 @@
                 <figure>
                     <img src="imagens/funcionario3.jpg"
                       alt="Ana Souza, coordenadora de reservas">
+
                     <figcaption>
                         Ana Souza<br>
                         Coordenadora de Reservas
@@ -121,47 +124,56 @@
             <form>
 
                 <div class="campo-formulario">
+
                     <label for="nome">Nome:</label>
+
                     <input
                       type="text"
                       id="nome"
                       name="nome"
                       required>
+
                 </div>
 
                 <div class="campo-formulario">
+
                     <label for="email">E-mail:</label>
+
                     <input
                       type="email"
                       id="email"
                       name="email"
                       required>
+
                 </div>
 
                 <fieldset>
 
                     <legend>Finalidade da mensagem:</legend>
 
-                    <label>
+                    <label for="consulta-geral">
                         <input
                           type="radio"
+                          id="consulta-geral"
                           name="finalidade"
                           value="consulta-geral"
                           required>
                         Consulta Geral
                     </label>
 
-                    <label>
+                    <label for="pergunta-reserva">
                         <input
                           type="radio"
+                          id="pergunta-reserva"
                           name="finalidade"
                           value="reserva">
                         Pergunta sobre Reserva
                     </label>
 
-                    <label>
+                    <label for="sugestao-site">
                         <input
                           type="radio"
+                          id="sugestao-site"
                           name="finalidade"
                           value="sugestao">
                         Sugestão de Site
@@ -170,15 +182,19 @@
                 </fieldset>
 
                 <div class="campo-formulario">
+
                     <label for="mensagem">Mensagem:</label>
+
                     <textarea
                       id="mensagem"
                       name="mensagem"
                       rows="6"
                       required></textarea>
+
                 </div>
 
                 <div class="newsletter">
+
                     <input
                       type="checkbox"
                       id="newsletter"
@@ -187,6 +203,7 @@
                     <label for="newsletter">
                         Quero receber a newsletter mensal
                     </label>
+
                 </div>
 
                 <button type="submit">
@@ -205,27 +222,33 @@
             © 2026 Aventura Selvagem Rafting | Ivan Carreño
         </p>
 
-        <nav class="socialmedia">
+        <nav class="socialmedia redes-sociais">
 
             <a href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer">
+
                 <img src="imagens/facebook.png"
                   alt="Ícone do Facebook">
+
             </a>
 
             <a href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer">
+
                 <img src="imagens/linkedin.png"
                   alt="Ícone do LinkedIn">
+
             </a>
 
             <a href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer">
+
                 <img src="imagens/instagram.png"
                   alt="Ícone do Instagram">
+
             </a>
 
         </nav>
