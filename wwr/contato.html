@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+      content="Entre em contato com a Aventura Selvagem Rafting para tirar dúvidas, fazer perguntas sobre reservas e conhecer nossos serviços.">
+
+    <meta name="author" content="Ivan Carreño">
+
+    <title>Fale Conosco | Aventura Selvagem Rafting</title>
+
+    <link rel="stylesheet" href="estilos/rafting.css">
+</head>
+
+<body>
+
+    <header>
+
+        <img src="imagens/logo.png"
+          alt="Logotipo da Aventura Selvagem Rafting">
+
+        <nav>
+            <a href="index.html">Página Inicial</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="passeios.html">Passeios</a>
+            <a href="contato.html">Fale Conosco</a>
+        </nav>
+
+    </header>
+
+    <main class="contato-main">
+
+        <h1>Fale Conosco</h1>
+
+        <section class="informacoes-contato">
+
+            <div class="dados-contato">
+
+                <h2>Entre em Contato</h2>
+
+                <p>
+                    Estamos prontos para ajudar você a planejar sua próxima aventura.
+                </p>
+
+                <p>
+                    <strong>Endereço:</strong>
+                    Avenida Paulista, 1000 - São Paulo, SP
+                </p>
+
+                <p>
+                    <strong>Telefone:</strong>
+                    (11) 4002-8922
+                </p>
+
+                <p>
+                    <strong>E-mail:</strong>
+                    contato@aventuraselvagem.com
+                </p>
+
+            </div>
+
+            <div class="mapa">
+
+                <iframe
+                  src="https://www.google.com/maps?q=Avenida+Paulista,+1000,+São+Paulo,+SP&output=embed"
+                  width="400"
+                  height="250"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Localização da Aventura Selvagem Rafting">
+                </iframe>
+
+            </div>
+
+        </section>
+
+        <section class="equipe">
+
+            <h2>Nossa Equipe</h2>
+
+            <div class="equipe-container">
+
+                <figure>
+                    <img src="imagens/funcionario1.jpg"
+                      alt="Mariana Silva, gerente de atendimento">
+                    <figcaption>
+                        Mariana Silva<br>
+                        Gerente de Atendimento
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="imagens/funcionario2.jpg"
+                      alt="Carlos Mendes, guia de rafting">
+                    <figcaption>
+                        Carlos Mendes<br>
+                        Guia de Rafting
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="imagens/funcionario3.jpg"
+                      alt="Ana Souza, coordenadora de reservas">
+                    <figcaption>
+                        Ana Souza<br>
+                        Coordenadora de Reservas
+                    </figcaption>
+                </figure>
+
+            </div>
+
+        </section>
+
+        <section class="formulario-contato">
+
+            <h2>Envie uma Mensagem</h2>
+
+            <form>
+
+                <div class="campo-formulario">
+                    <label for="nome">Nome:</label>
+                    <input
+                      type="text"
+                      id="nome"
+                      name="nome"
+                      required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="email">E-mail:</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required>
+                </div>
+
+                <fieldset>
+
+                    <legend>Finalidade da mensagem:</legend>
+
+                    <label>
+                        <input
+                          type="radio"
+                          name="finalidade"
+                          value="consulta-geral"
+                          required>
+                        Consulta Geral
+                    </label>
+
+                    <label>
+                        <input
+                          type="radio"
+                          name="finalidade"
+                          value="reserva">
+                        Pergunta sobre Reserva
+                    </label>
+
+                    <label>
+                        <input
+                          type="radio"
+                          name="finalidade"
+                          value="sugestao">
+                        Sugestão de Site
+                    </label>
+
+                </fieldset>
+
+                <div class="campo-formulario">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea
+                      id="mensagem"
+                      name="mensagem"
+                      rows="6"
+                      required></textarea>
+                </div>
+
+                <div class="newsletter">
+                    <input
+                      type="checkbox"
+                      id="newsletter"
+                      name="newsletter">
+
+                    <label for="newsletter">
+                        Quero receber a newsletter mensal
+                    </label>
+                </div>
+
+                <button type="submit">
+                    Enviar Mensagem
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            © 2026 Aventura Selvagem Rafting | Ivan Carreño
+        </p>
+
+        <nav class="socialmedia">
+
+            <a href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer">
+                <img src="imagens/facebook.png"
+                  alt="Ícone do Facebook">
+            </a>
+
+            <a href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer">
+                <img src="imagens/linkedin.png"
+                  alt="Ícone do LinkedIn">
+            </a>
+
+            <a href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer">
+                <img src="imagens/instagram.png"
+                  alt="Ícone do Instagram">
+            </a>
+
+        </nav>
+
+    </footer>
+
+</body>
+
+</html>
