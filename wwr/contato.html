@@ -19,8 +19,7 @@
 
     <header>
 
-        <img src="imagens/logo.png"
-          alt="Logotipo da Aventura Selvagem Rafting">
+        <img src="imagens/logo.png" alt="Logotipo da Aventura Selvagem Rafting">
 
         <nav>
             <a href="index.html">Página Inicial</a>
@@ -33,188 +32,173 @@
 
     <main class="contato-main">
 
-        <h1>Fale Conosco - Aventura Selvagem Rafting</h1>
+        <section class="contato-cabecalho">
 
-        <section class="informacoes-contato">
+            <h1>Fale Conosco - Aventura Selvagem Rafting</h1>
 
-            <div class="dados-contato">
+            <address>
 
-                <h2>Entre em Contato</h2>
+                <p>Avenida Paulista, 1000 - São Paulo, SP</p>
 
-                <p>
-                    Estamos prontos para ajudar você a planejar sua próxima aventura.
-                </p>
+                <p>(11) 4002-8922</p>
 
                 <p>
-                    <strong>Endereço:</strong>
-                    Avenida Paulista, 1000 - São Paulo, SP
+                    <a href="mailto:contato@aventuraselvagem.com">
+                        contato@aventuraselvagem.com
+                    </a>
                 </p>
 
-                <p>
-                    <strong>Telefone:</strong>
-                    (11) 4002-8922
-                </p>
+            </address>
 
-                <p>
-                    <strong>E-mail:</strong>
-                    contato@aventuraselvagem.com
-                </p>
+        </section>
 
-            </div>
+
+        <section class="contato-conteudo">
 
             <div class="mapa">
 
                 <iframe
                   src="https://www.google.com/maps?q=Avenida+Paulista,+1000,+São+Paulo,+SP&output=embed"
-                  width="400"
-                  height="250"
-                  loading="lazy"
+                  width="400" height="400" loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
                   title="Localização da Aventura Selvagem Rafting">
                 </iframe>
 
             </div>
 
-        </section>
 
-        <section class="equipe">
+            <form class="formulario-contato">
 
-            <h2>Nossa Equipe</h2>
+                <div class="campo-horizontal">
 
-            <div class="equipe-container">
-
-                <figure>
-                    <img src="imagens/funcionario1.jpg"
-                      alt="Mariana Silva, gerente de atendimento">
-
-                    <figcaption>
-                        Mariana Silva<br>
-                        Gerente de Atendimento
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <img src="imagens/funcionario2.jpg"
-                      alt="Carlos Mendes, guia de rafting">
-
-                    <figcaption>
-                        Carlos Mendes<br>
-                        Guia de Rafting
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <img src="imagens/funcionario3.jpg"
-                      alt="Ana Souza, coordenadora de reservas">
-
-                    <figcaption>
-                        Ana Souza<br>
-                        Coordenadora de Reservas
-                    </figcaption>
-                </figure>
-
-            </div>
-
-        </section>
-
-        <section class="formulario-contato">
-
-            <h2>Envie uma Mensagem</h2>
-
-            <form>
-
-                <div class="campo-formulario">
-
-                    <label for="nome">Nome:</label>
-
-                    <input
-                      type="text"
-                      id="nome"
-                      name="nome"
-                      required>
-
-                </div>
-
-                <div class="campo-formulario">
-
-                    <label for="email">E-mail:</label>
-
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required>
-
-                </div>
-
-                <fieldset>
-
-                    <legend>Finalidade da mensagem:</legend>
-
-                    <label for="consulta-geral">
-                        <input
-                          type="radio"
-                          id="consulta-geral"
-                          name="finalidade"
-                          value="consulta-geral"
-                          required>
-                        Consulta Geral
+                    <label for="nome">
+                        Nome
                     </label>
 
-                    <label for="pergunta-reserva">
-                        <input
-                          type="radio"
-                          id="pergunta-reserva"
-                          name="finalidade"
-                          value="reserva">
+                    <input type="text" id="nome" name="nome" placeholder="Digite aqui" required>
+
+                </div>
+
+
+                <div class="campo-horizontal">
+
+                    <label for="email">
+                        E-mail
+                    </label>
+
+                    <input type="email" id="email" name="email" placeholder="Digite aqui" required>
+
+                </div>
+
+
+                <fieldset class="finalidade">
+
+                    <legend>
+                        Propósito da Mensagem
+                    </legend>
+
+                    <label>
+                        <input type="radio" name="finalidade" value="duvida-geral" required>
+
+                        Dúvida Geral
+                    </label>
+
+                    <label>
+                        <input type="radio" name="finalidade" value="reserva">
+
                         Pergunta sobre Reserva
                     </label>
 
-                    <label for="sugestao-site">
-                        <input
-                          type="radio"
-                          id="sugestao-site"
-                          name="finalidade"
-                          value="sugestao">
-                        Sugestão de Site
+                    <label>
+                        <input type="radio" name="finalidade" value="sugestao">
+
+                        Sugestão
                     </label>
 
                 </fieldset>
 
-                <div class="campo-formulario">
 
-                    <label for="mensagem">Mensagem:</label>
+                <div class="campo-mensagem">
 
-                    <textarea
-                      id="mensagem"
-                      name="mensagem"
-                      rows="6"
+                    <label for="mensagem">
+                        Mensagem
+                    </label>
+
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite aqui"
                       required></textarea>
 
                 </div>
 
+
                 <div class="newsletter">
 
-                    <input
-                      type="checkbox"
-                      id="newsletter"
-                      name="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter">
 
                     <label for="newsletter">
-                        Quero receber a newsletter mensal
+                        Por favor, me inscreva na newsletter mensal
                     </label>
 
                 </div>
 
+
                 <button type="submit">
-                    Enviar Mensagem
+                    Entrar em Contato!
                 </button>
 
             </form>
 
         </section>
 
+
+        <section class="equipe">
+
+            <h2>
+                Estamos Aqui para Servi-lo
+            </h2>
+
+            <div class="equipe-container">
+
+                <figure>
+
+                    <img src="imagens/funcionario1.jpg" alt="Mariana Silva, gerente de atendimento">
+
+                    <figcaption>
+                        Mariana Silva<br>
+                        <span>Gerente de Atendimento</span>
+                    </figcaption>
+
+                </figure>
+
+
+                <figure>
+
+                    <img src="imagens/funcionario2.jpg" alt="Carlos Mendes, guia de rafting">
+
+                    <figcaption>
+                        Carlos Mendes<br>
+                        <span>Guia de Rafting</span>
+                    </figcaption>
+
+                </figure>
+
+
+                <figure>
+
+                    <img src="imagens/funcionario3.jpg" alt="Ana Souza, coordenadora de reservas">
+
+                    <figcaption>
+                        Ana Souza<br>
+                        <span>Coordenadora de Reservas</span>
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+        </section>
+
     </main>
+
 
     <footer>
 
@@ -222,32 +206,23 @@
             © 2026 Aventura Selvagem Rafting | Ivan Carreño
         </p>
 
-        <nav class="socialmedia redes-sociais">
+        <nav class="socialmedia">
 
-            <a href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
 
-                <img src="imagens/facebook.png"
-                  alt="Ícone do Facebook">
+                <img src="imagens/facebook.png" alt="Ícone do Facebook">
 
             </a>
 
-            <a href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
 
-                <img src="imagens/linkedin.png"
-                  alt="Ícone do LinkedIn">
+                <img src="imagens/linkedin.png" alt="Ícone do LinkedIn">
 
             </a>
 
-            <a href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
 
-                <img src="imagens/instagram.png"
-                  alt="Ícone do Instagram">
+                <img src="imagens/instagram.png" alt="Ícone do Instagram">
 
             </a>
 
