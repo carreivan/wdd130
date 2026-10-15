@@ -599,3 +599,381 @@ footer p {
 
     object-fit: contain;
 }
+
+/* =========================================
+   PÁGINA INICIAL
+   ========================================= */
+
+.inicio-hero,
+.passeios-hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.inicio-hero > img,
+.passeios-hero > img {
+    display: block;
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+}
+
+.inicio-mensagem,
+.passeios-hero > div {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    padding: 25px;
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 0.68),
+            rgba(0, 0, 0, 0.12));
+}
+
+.inicio-mensagem h1,
+.passeios-hero h1 {
+    color: #ffffff;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    text-shadow: 2px 2px 5px #000000;
+}
+
+.inicio-mensagem p,
+.passeios-hero p {
+    max-width: 600px;
+    color: #ffffff;
+    font-size: 1.15rem;
+    line-height: 1.6;
+}
+
+.botao-rafting {
+    display: inline-block;
+    padding: 13px 22px;
+    background-color: #b33b16;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.botao-rafting:hover {
+    background-color: #79250e;
+    text-decoration: underline;
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+    margin: 25px 0;
+    padding: 25px;
+    background-color: #e5f4f8;
+    text-align: center;
+}
+
+.newsletter h2,
+.inicio-ofertas h2,
+.passeios-lista h2,
+.tabela-passeios h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.newsletter p {
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+.newsletter form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 12px;
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.newsletter label {
+    align-self: center;
+    font-weight: bold;
+}
+
+.newsletter input {
+    width: 100%;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid #555555;
+    border-radius: 4px;
+}
+
+.newsletter button {
+    grid-column: 1 / -1;
+    padding: 12px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #0b4f6c;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #023047;
+}
+
+/* GRID DA PÁGINA INICIAL */
+
+.inicio-ofertas {
+    padding: 25px 0;
+}
+
+.inicio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.inicio-card {
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 7px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.15);
+}
+
+.inicio-card img {
+    display: block;
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.inicio-card h3,
+.inicio-card p,
+.inicio-card a {
+    display: block;
+    margin: 14px;
+}
+
+.inicio-card p {
+    line-height: 1.6;
+}
+
+.inicio-card a {
+    color: #0b4f6c;
+    font-weight: bold;
+}
+
+.inicio-contato,
+.passeios-contato {
+    margin: 25px 0;
+    padding: 30px 20px;
+    background-color: #023047;
+    color: #ffffff;
+    text-align: center;
+}
+
+.inicio-contato h2,
+.passeios-contato h2 {
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.inicio-contato p,
+.passeios-contato p {
+    margin-bottom: 18px;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* PÁGINA DE PASSEIOS */
+
+.passeios-lista,
+.tabela-passeios {
+    padding: 25px 0;
+}
+
+.passeios-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.passeio-card {
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 7px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.15);
+}
+
+.passeio-card:first-child {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.passeio-card img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.passeio-texto {
+    padding: 18px;
+}
+
+.passeio-texto h3 {
+    margin-bottom: 12px;
+    color: #0b4f6c;
+}
+
+.passeio-texto p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.equipamentos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 22px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #e5f4f8;
+}
+
+.equipamentos h2 {
+    margin-bottom: 12px;
+}
+
+.equipamentos p {
+    line-height: 1.7;
+}
+
+.equipamentos img {
+    display: block;
+    width: 100%;
+    max-height: 280px;
+    object-fit: cover;
+}
+
+.tabela-scroll {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.tabela-passeios table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+.tabela-passeios th,
+.tabela-passeios td {
+    padding: 12px;
+    border: 1px solid #b5c5cc;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.tabela-passeios th {
+    background-color: #0b4f6c;
+    color: #ffffff;
+}
+
+.tabela-passeios tbody tr:nth-child(even) {
+    background-color: #e5f4f8;
+}
+
+.aviso-passeios {
+    margin-top: 12px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 860px) {
+
+    header,
+    main,
+    footer {
+        width: 100%;
+    }
+
+    header {
+        grid-template-columns: 90px 1fr;
+        padding: 10px;
+    }
+
+    header img {
+        width: 75px;
+    }
+
+    header nav {
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    header nav a {
+        padding: 8px;
+    }
+
+    main {
+        padding: 0 12px;
+    }
+
+    .inicio-hero,
+    .passeios-hero {
+        margin-left: -12px;
+        width: calc(100% + 24px);
+    }
+
+    .inicio-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+
+    .inicio-hero > img,
+    .passeios-hero > img {
+        height: 350px;
+    }
+
+    .inicio-grid,
+    .passeios-grid,
+    .equipamentos {
+        grid-template-columns: 1fr;
+    }
+
+    .passeio-card:first-child {
+        grid-column: auto;
+        display: block;
+    }
+
+    .newsletter {
+        padding: 18px 12px;
+    }
+
+    .newsletter form {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter button {
+        grid-column: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    footer p {
+        line-height: 1.5;
+    }
+}
